@@ -28,5 +28,19 @@ console.log(rentalCar.make);
 rentalCar.calculateRentalDuration()
 
 class Question{
-    constructor(text,options,correctAnswer){}
-}
+    constructor(text,options,correctAnswer){
+        this.text = text
+        this.options = options
+        this.correctAnswer = correctAnswer
+    }
+    checkAnswer(answer){
+        this.answer = answer
+        if(`${this.answer}`!==`${this.correctAnswer}`){
+            console.log("false")
+        }
+        else{
+            console.log("true");
+        }
+    }
+    
+    }
